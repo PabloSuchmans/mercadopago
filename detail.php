@@ -142,7 +142,7 @@
                                           $nombre = $_POST['title'];
                                           $cantidad = $_POST['unit'];
                                           $precio = $_POST['price'];
-                                          $img = "https://certificado-mercadopago.herokuapp.com" . substr($_POST['img'], 1);
+                                          $img = "https://mercadopago-certificado.herokuapp.com/" . substr($_POST['img'], 1);
 
 
                                           // SDK de Mercado Pago
@@ -199,12 +199,12 @@
                                           
                                           $preference->payer = $payer;
 
-                                          $preference->external_reference = "joaquindaneri@gmail.com";
+                                          $preference->external_reference = "suchmanspablo@gmail.com";
 
                                           $preference->back_urls = array(
-                                              "success" => "https://certificado-mercadopago.herokuapp.com/aprobado.php",
-                                              "failure" => "https://certificado-mercadopago.herokuapp.com/rechazado.php",
-                                              "pending" => "https://certificado-mercadopago.herokuapp.com/pendiente.php"
+                                              "success" => "https://mercadopago-certificado.herokuapp.com/aprobado.php",
+                                              "failure" => "https://mercadopago-certificado.herokuapp.com/rechazado.php",
+                                              "pending" => "https://mercadopago-certificado.herokuapp.com/pendiente.php"
                                           );
                                           $preference->auto_return = "approved";
                                           $preference->notification_url = "https://www.creadoresdesoft.com.ar/mercadopago/mp.php";
