@@ -207,7 +207,7 @@
                                               "pending" => "https://mercadopago-certificado.herokuapp.com/pendiente.php"
                                           );
                                           $preference->auto_return = "approved";
-                                          $preference->notification_url = "https://www.cooperativaaguapb.com.ar/mercadopago/mp.php";
+                                          $preference->notification_url = "https://mercadopago-certificado.herokuapp.com/mp.php";
                                           //$preference->notification_url = "https://certificado-mercadopago.herokuapp.com/notifications.php";
                                         
 
